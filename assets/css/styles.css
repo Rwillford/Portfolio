@@ -1,24 +1,29 @@
 * {
-
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(../images/hexagon.jpg);
+    background-size: cover;
 }
 
-header {
-
-}
-
+/*Navigation*/
 header h1 {
     font-size: 48px;
+    color: antiquewhite;
     display: flex;
     justify-content: center;
+    padding: 10px;
+    Background-image: url(../images/hexagonal-background.jpg)
 }
 
 header a {
     font-size: 24px;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color:antiquewhite;
 }
 
 header nav ul {
@@ -26,14 +31,74 @@ header nav ul {
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
+    background-color: gray;
+    
 }
 
 .section-title {
     font-size: 32px;
-    color: #8ed8fc;
+    color: #750505;
     border-bottom: 2px solid;
     padding-bottom: 5px;
+    margin: 10px;
     display: flex;
     justify-content: center;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    clear: both;
+}
+
+/*About Me*/
+.image img {
+    border: 2px solid #750505;
+    border-radius: 5px;
+    width: 8%;
+    height: 8%;
+    float: left;
+    margin-left: 10px;;
+}
+
+.info p {
+    text-align: center;
+    font-size: 24px;
+}
+
+/*My Work*/
+.work .project {
+    border: 4px solid #750505;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    content:none;
+    margin: 50px;
+    padding: 5px;
+    align-items: space-between;
+    
+}
+
+.work h3 {
+    background-color: gray;
+    background-size: cover;
+    color:antiquewhite;
+}
+
+.work img {
+    width: 35%;
+    height: 35%;
+}
+
+/*Contact Me */
+.contact ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: gray;
+    padding: 10px;
+
+}
+
+.contact a {
+    font-size: 16px;
+    text-decoration: none;
+    color:antiquewhite;
 }
