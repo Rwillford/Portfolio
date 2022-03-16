@@ -10,13 +10,18 @@ body {
 }
 
 /*Navigation*/
+header {
+    text-align: end;
+}
+
 header h1 {
     font-size: 48px;
     color: antiquewhite;
     display: flex;
     justify-content: center;
     padding: 50px;
-    Background-image: url(../images/hexagonal-background.jpg)
+    Background-image: url(../images/hexagonal-background.jpg);
+    background-size: contain;
 }
 
 header a {
@@ -56,7 +61,7 @@ header nav ul {
     width: 8%;
     height: 8%;
     float: left;
-    margin-left: 10px;;
+    margin-left: 10px;
 }
 
 .info p {
@@ -69,30 +74,54 @@ header nav ul {
 .work {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
-.project {
-    border: 4px solid #750505;
+.project-done {
+    border: 5px solid #750505;
     border-radius: 5px;
-    max-height: 300px;
-    max-width: 400px;
-    padding: 5px;
-    display: flex;
-    justify-content:center;
-    padding-right: 30px;
-}
-
-.button {
-    background-color: gray;
+    background-image: url(../images/RunBuddy.jpg);
     background-size: cover;
-    color:antiquewhite;
-    border-radius: 5px;   
+    width: 400px;
+    height: 300px;
+    display:flex;
+    filter:brightness(80%)
 }
 
-.work img {
-    object-fit: fill;
+.project-done:hover, .working:hover {
+    filter:brightness(100%);
+    transform: scale(1.1);
+}
+
+.project-done a, .working a {
+    overflow:hidden;
+    text-indent: 100%;
     width: 400px;
-    height: 300px;  
+    height: 300px;
+    position: absolute;
+}
+
+.working {
+    border: 5px solid #750505;
+    border-radius: 5px;
+    background-image: url(../images/Caution.jpg);
+    background-size:contain;
+    width: 400px;
+    height: 300px;
+    display:flex;
+    filter:brightness(80%)
+}
+
+
+
+.work-title {
+    font-size: 18px;
+    color: antiquewhite;
+    background-color: gray;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 278px;
+    padding: 2px;
 }
 
 /*Contact Me */
