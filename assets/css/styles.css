@@ -6,7 +6,7 @@
 body {
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-image: url(../images/hexagon.jpg);
-    background-size: cover;
+    background-size: fill;
 }
 
 /*Navigation*/
@@ -16,6 +16,7 @@ header {
 
 header h1 {
     font-size: 48px;
+    text-align: center;
     color: antiquewhite;
     display: flex;
     justify-content: center;
@@ -43,6 +44,7 @@ header nav ul {
 
 .section-title {
     font-size: 32px;
+    text-align: center;
     color: #750505;
     border-bottom: 2px solid;
     padding-bottom: 5px;
@@ -60,8 +62,8 @@ header nav ul {
     border-radius: 5px;
     width: 8%;
     height: 8%;
-    float: left;
-    margin-left: 10px;
+    float:left;
+    margin: 0 5px;
 }
 
 .info p {
@@ -139,4 +141,48 @@ header nav ul {
     font-size: 16px;
     text-decoration: none;
     color:antiquewhite;
+}
+
+/* Sizing for Various screen sizes */
+@media screen and (max-width: 1655px) {
+    .work {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .image img {
+        width: 15%;
+    }
+
+
+}
+
+@media screen and (max-width: 980px) {
+    
+    .image img {
+        width: 20%;
+    }
+
+    .info p {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .work {
+        flex-direction: column;
+        align-content: space-around;
+        padding: 10px 10px;
+    
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .image img {
+        width: 25%;
+    }
+    
+    .info p {
+        font-size: 30px;
+        padding: 10px;
+    }
 }
