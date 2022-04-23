@@ -79,10 +79,9 @@ header nav ul {
     flex-wrap: wrap;
 }
 
-.project-done {
+.project {
     border: 5px solid #750505;
     border-radius: 5px;
-    background-image: url(../images/RunBuddy.jpg);
     background-size: cover;
     width: 400px;
     height: 300px;
@@ -90,31 +89,34 @@ header nav ul {
     filter:brightness(80%)
 }
 
-.project-done:hover, .working:hover {
+.project-one {
+    background-image: url(../images/RunBuddy.jpg);
+}
+
+.project-two {
+    background-image: url(../images/RecipeRoulette.jpg);
+}
+
+.project-three {
+    background-image: url(../images/WorkDayPlanner.jpg);
+}
+
+.project-four {
+    background-image: url(../images/WeatherOutlook.jpg);
+}
+
+.project-one:hover, .project-two:hover, .project-three:hover, .project-four:hover {
     filter:brightness(100%);
     transform: scale(1.1);
 }
 
-.project-done a, .working a {
+.project-one a, .project-two a, .project-three a, .project-four a {
     overflow:hidden;
     text-indent: 100%;
     width: 400px;
     height: 300px;
     position: absolute;
 }
-
-.working {
-    border: 5px solid #750505;
-    border-radius: 5px;
-    background-image: url(../images/Caution.jpg);
-    background-size:contain;
-    width: 400px;
-    height: 300px;
-    display:flex;
-    filter:brightness(80%)
-}
-
-
 
 .work-title {
     font-size: 18px;
