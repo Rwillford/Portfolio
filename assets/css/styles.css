@@ -105,12 +105,16 @@ header nav ul {
     background-image: url(../images/WeatherOutlook.jpg);
 }
 
-.project-one:hover, .project-two:hover, .project-three:hover, .project-four:hover {
+.project-five {
+    background-image: url(../images/legoTwitter.jpg);
+}
+
+.project-one:hover, .project-two:hover, .project-three:hover, .project-four:hover, .project-five:hover {
     filter:brightness(100%);
     transform: scale(1.1);
 }
 
-.project-one a, .project-two a, .project-three a, .project-four a {
+.project-one a, .project-two a, .project-three a, .project-four a, .project-five a {
     overflow:hidden;
     text-indent: 100%;
     width: 400px;
